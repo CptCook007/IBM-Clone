@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+
+/* @font-face {
+    font-family: helvetica-neue;
+    src: url(../font/HelveticaNeue-Regular.otf);
+}
+
+@font-face {
+    font-family: helvetica-neue;
+    src: url(../font/HelveticaNeue-Light.otf);
+}
+
+@font-face {
+    font-family: helvetica-neue;
+    src: url(../font/HelveticaNeue-Medium.otf);
+}
+
+@font-face {
+    font-family: helvetica-neue;
+    src: url(../font/HelveticaNeue-Thin.otf);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif, helvetica-neue;
+}
+
+
+header {
+    padding-left: 34px;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: white;
+    border-bottom: 1px solid #c8c9cd;
+}
+
+.left-section {
+    height: 25px;
+}
+
+.left-section:hover {
+    cursor: pointer;
+    background-color: #c8c9cd84;
+}
+
+nav {
+    display: flex;
+    gap: 0px;
+    margin-left: 50px;
+    margin-right: 400px;
+    color: #494949;
+    font-size: 16px;
+    height: 47px;
+}
+
+.right-section {
+    display: flex;
+    margin-left: 287px;
+    gap: 28px;
+    padding-top: 5px;
+}
+
+.right-section svg {
+    color: #494949;
+}
+
+.tabs {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    padding: auto;
+    width: 125px;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tabs:hover {
+    cursor: pointer;
+    background-color: #c8c9cd84;
+    color: black;
+}
+
+.tabs svg {
+    width: 30px;
+    height: 30px;
+    padding-left: 9px;
+    /* position: absolute; */
+    /* top: 0.9px; */
+    /* left: 70px */
+}
+
+
+.digital {
+    background-image: url(../img/backgorund/bg-picture-1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 559px;
+    width: 1535px;
+    position: relative;
+}
+
+.big-words {
+    padding-top: 35px;
+    padding-left: 33px;
+    width: 650px;
+    line-height: 68px;
+}
+
+.big-words h1 {
+    font-size: 58px;
+    color: #262626;
+    font-weight: 300;
+}
+
+.picture-para {
+    position: absolute;
+    top: 360px;
+    padding-left: 33px;
+    font-size: 23px;
+    width: 515px;
+    color: #494949;
+}
+
+.picture-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: 32px;
+    margin-top: 310px;
+}
+
+
+.picture-buttons button {
+    display: flex;
+    padding-left: 16px;
+    padding-top: 2px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    align-items: center;
+    border: 1px solid #0062ff;
+    font-family: 'IBM Plex Sans';
+}
+
+.picture-buttons button div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17px;
+}
+
+.design-your-strats {
+    background-color: #0062ff;
+    color: white;
+    transition: background-color 0.2s;
+    width: 228px;
+}
+
+.design-your-strats:hover {
+    cursor: pointer;
+    background-color: #0354e9;
+}
+
+.meet-watson {
+    width: 181px;
+    color: #0062ff;
+    background: none;
+    transition: background-color 0.2s, color 0.2s;
+    /* border: 0.5px solid #0062ff; */
+}
+
+.meet-watson:hover {
+    cursor: pointer;
+    background-color: #0062ff;
+    color: white;
+}
+
+.storage {
+    display: flex;
+    background-color: #f4f4f4;
+    padding-left: 33px;
+    padding-top: 33px;
+    position: relative;
+    height: 175px;
+}
+
+.storage-text {
+    font-size: 28px;
+    color: #262626;
+    width: 700px;
+}
+
+.text-bold {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.learn-more-button {
+    display: flex;
+    padding-left: 16px;
+    padding-top: 3px;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    height: 50px;
+    width: 345px;
+    align-items: center;
+    background-color: #0062ff;
+    color: white;
+    font-family: 'IBM Plex Sans';
+    position: absolute;
+    right: 33px;
+    top: 33px;
+    transition: background-color 0.2s;
+}
+
+.learn-more-button:hover {
+    cursor: pointer;
+    background-color: #0354e9;
+    ;
+}
+
+.learn-more-button div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17px;
+}
+
+.create-container {
+    padding-top: 33px;
+    display: flex;
+}
+
+.side-text-heading {
+    width: 165px;
+    padding-bottom: 25px;
+    margin-left: 33px;
+    color: #262626;
+}
+
+.side-text {
+    font-family: 'IBM Plex Sans';
+    color: rgb(82, 82, 82);
+    width: 280px;
+    margin-left: 33px;
+    font-weight: 400;
+}
+
+.create-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 34px;
+    margin-left: 96px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.video img {
+    height: 194px;
+    width: 343px;
+    object-fit: cover;
+}
+
+.play-button {
+    background-color: #0053ec;
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    width: 75px;
+    height: 75px;
+    padding-top: 21px;
+    padding-left: 24px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+}
+
+.thumbnail:hover .play-button {
+    cursor: pointer;
+    background-color: rgba(38, 38, 38, 0.701);
+}
+
+.play-button svg {
+    /* font-size: 50px; */
+    color: white;
+    object-fit: contain;
+    border-radius: 70px;
+    /* padding: 10px; */
+    fill: white;
+}
+
+.about-video {
+    padding-top: 20px;
+    color: #525252;
+    width: 320.45px;
+    height: 20px;
+}
+
+.video-time {
+    padding-top: 72px;
+    position: relative;
+    display: flex;
+    color: #0055ff;
+}
+
+.video-time svg {
+    position: absolute;
+    left: 180px;
+    height: 20px;
+    fill: #0055ff;
+}
+
+.video-time:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.explore {
+    padding-top: 14px;
+    display: flex;
+    gap: 9px;
+    color: #0055ff;
+}
+
+.explore:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.consultation {
+    display: flex;
+    margin-top: 124px;
+    position: relative;
+}
+
+.tabs2 {
+    padding-top: 8px;
+    padding-left: 214px;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #494949;
+}
+
+.active-tab {
+    color: #262626;
+    text-decoration: underline solid #0055ff 2px;
+    text-underline-offset: 10px;
+}
+
+.consulting-tab:hover {
+    cursor: pointer;
+    text-decoration: underline solid #0055ff 2px;
+    text-underline-offset: 10px;
+}
+
+.dining-photo img {
+    width: 673px;
+    height: 379px;
+    position: absolute;
+    top: 100px;
+    left: 408px;
+}
+
+.consulting-services {
+    position: absolute;
+    top: 100px;
+    right: 105px;
+}
+
+.services-heading {
+    font-size: calc(1.75rem + .25 * ((100vw - 82rem)/ 17));
+    width: 240px;
+    height: 78px;
+    color: #262626;
+    margin-bottom: 26px;
+}
+
+.service-description {
+    line-height: 25px;
+    width: 320px;
+    height: 72px;
+    color: #525252;
+}
+
+.learn-more-services {
+    margin-top: 26px;
+    display: flex;
+    gap: 12px;
+    color: #0055ff;
+}
+
+.learn-more-services:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cio-org {
+    margin-top: 528px;
+    background-image: url(../img/pictures/d67c48b0-19cc-469d-90b32643463ad4f8.xl_5x2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 560px;
+    width: 1535px;
+    position: relative;
+}
+
+
+.cio-org::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #0000004d, #000000);
+}
+
+.cloud {
+    padding-left: 33px;
+    width: 400px;
+}
+
+.cloud-heading {
+    padding-top: 33px;
+    font-size: 58px;
+    width: 340px;
+    height: 278px;
+    line-height: 1.17;
+    font-weight: 300;
+    color: #f4f4f4;
+    position: relative;
+    z-index: 2;
+}
+
+.cloud-description {
+    color: #c6c6c6;
+    position: absolute;
+    width: 400px;
+    font-size: 23px;
+    margin-top: 60px;
+    z-index: 2;
+}
+
+.read-the-story-button {
+    display: flex;
+    padding-left: 16px;
+    padding-top: 3px;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    width: 220px;
+    align-items: center;
+    background-color: #0062ff;
+    color: white;
+    font-family: 'IBM Plex Sans';
+    position: absolute;
+    bottom: 55px;
+    left: 33px;
+    border: none;
+    transition: background-color 0.2s;
+    z-index: 2;
+}
+
+.read-the-story-button div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17px;
+}
+
+.read-the-story-button:hover {
+    cursor: pointer;
+    background-color: #0354e9;
+}
+
+.product-section {
+    margin-left: 33px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.product-side-heading {
+    padding-top: 60px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.product-grid {
+    padding-left: 235px;
+    padding-top: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.product {
+    background-color: #f4f4f4;
+    width: 374px;
+    height: 159px;
+    padding-top: 13px;
+    padding-left: 15px;
+    transition: background-color 0.15s;
+}
+
+.product:hover {
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+.product svg {
+    /* color: black; */
+    fill: black;
+    filter: brightness(0) saturate(100%);
+    height: 47px;
+    width: 47px;
+}
+
+
+.product-text {
+    font-size: 20px;
+    padding-top: 45px;
+    position: relative;
+}
+
+.product-text svg {
+    position: absolute;
+    top: 45px;
+    left: 320px;
+}
+
+#browse-products {
+    background-color: #0062ff;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+#browse-products:hover {
+    cursor: pointer;
+    background-color: #0252f1;
+}
+
+#browse-products .product-text {
+    padding-top: 94px;
+    position: relative;
+}
+
+#browse-products .product-text svg {
+    height: 35px;
+    width: 30px;
+    position: absolute;
+    left: 310px;
+    top: 93px;
+    filter: brightness(100);
+    fill: white;
+}
+
+
+.inside-ibm {
+    margin-left: 33px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.ibm-side-heading {
+    color: #262626;
+    padding-top: 60px;
+    font-weight: 700;
+    width: 90px;
+}
+
+.ibm-inside-grid {
+    display: grid;
+    padding-top: 60px;
+    margin-left: 285px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+/* 
+.ibm-inside-section {
+    width: 10px;
+} */
+
+.ibm-inside-section h3 {
+    font-size: 31px;
+    color: #262626;
+    font-weight: 400;
+    /* padding-bottom: 60px; */
+    width: 330px;
+}
+
+.ibm-inside-section p {
+    padding-top: 20px;
+    width: 320px;
+    height: 96px;
+    line-height: 24px;
+    color: #525252;
+}
+
+.inside-heading {
+    padding-bottom: 63px;
+}
+
+.ibm-inside-hyperlink {
+    display: flex;
+    padding-top: 45px;
+    color: rgb(15, 98, 254);
+    gap: 12px;
+}
+
+.ibm-inside-hyperlink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.section-adjust {
+    padding-bottom: 22px;
+}
+
+.ibm-security {
+    margin-top: 93px;
+    background-image: url(../img/pictures/ibm-homepage-qradar-AYR-launch-graphic.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 560px;
+    width: 1535px;
+    position: relative;
+}
+
+.ibm-security::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #ffffff4d, #ffffff);
+}
+
+.ibm-security-main {
+    padding-left: 33px;
+    position: absolute;
+    z-index: 2;
+}
+
+.ibm-security-heading {
+    padding-top: 30px;
+    color: #262626;
+    font-size: 57px;
+    width: 400px;
+    font-weight: 300;
+    line-height: 67.7px;
+}
+
+.ibm-security-content {
+    font-size: 23px;
+    width: 370px;
+    padding-top: 134px;
+    color: #525252;
+}
+
+.threat-detection-button {
+    display: flex;
+    padding-left: 16px;
+    padding-top: 3px;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    height: 49px;
+    width: 275px;
+    align-items: center;
+    background-color: #0062ff;
+    color: white;
+    font-family: 'IBM Plex Sans';
+    position: absolute;
+    top: 458px;
+    border: none;
+    transition: background-color 0.18s;
+}
+
+.threat-detection-button:hover {
+    cursor: pointer;
+    background-color: #0354e9;
+}
+
+.threat-detection-button div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17px;
+}
+
+.about {
+    padding-top: 30px;
+    width: 715px;
+    height: 117px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.about p {
+    line-height: 39px;
+    font-size: 31px;
+    color: #525252;
+}
+
+.about-link {
+    display: flex;
+    gap: 12px;
+    color: #0f62fe;
+}
+
+.about-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 190px;
+    padding-top: 40px;
+    background-color: #f4f4f4;
+    height: 500px;
+    position: relative;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 57px;
+    padding-right: 50px; */
+    margin-left: 59px;
+    margin-right: 59px;
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 133px;
+}
+
+.footer-grid-section {
+    display: flex;
+    width: 340px;
+    flex-direction: column;
+}
+
+.footer-grid-section p {
+    line-height: 33px;
+    color: #525252;
+    transition: color 0.3s, underline 0.3s;
+}
+
+.footer-grid-section p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #3b6caa;
+}
+
+.footer-head {
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: #464646;
+}
+
+.end {
+    padding-top: 18px;
+    margin-left: 69px;
+    color: #525252;
+    display: flex;
+    gap: 20px;
+
+}
+
+.end p {
+    transition: color 0.3s, underline 0.3s;
+}
+
+.end p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #3b6caa;
+}
+
+.feedback {
+    position: fixed;
+    top: 43%;
+    right: -46px;
+    height: 49px;
+    font-size: 12px;
+    padding-top: 8px;
+    color: #0f62fe;
+    display: flex;
+    width: 107px;
+    border: 1px solid #0f62fe;
+    border-bottom: none;
+    padding-left: 16px;
+    transform: rotate(270deg);
+    z-index: 10;
+    background-color: white;
+}
+
+.feedback:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.country {
+    position: absolute;
+    right: 60px;
+    bottom: 90px;
+    z-index: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.country p {
+    color: #464646;
+    font-size: 16.5px;
+    font-weight: 500;
+}
+
+.country-select {
+    border: 1px solid #a2abab;
+    background-color: white;
+    padding-top: 8px;
+    height: 40px;
+    width: 340px;
+    display: flex;
+    position: relative;
+    padding-left: 10px;
+    color: #525252;
+}
+
+
+.country-select svg {
+    position: absolute;
+    right: -20px;
+    color: #525252;
+}
+
+.country-select:hover {
+    cursor: pointer;
+}
